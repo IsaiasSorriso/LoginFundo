@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <title>Login com Fundo Cursor</title>
+</head>
+<body>
+    <div class="container2">
+        <div class="hex"></div>
+        <div class="bg"></div>
+    </div>
+    <div class="container">
+        <span class="bordeline"></span>
+        <form class="login">
+            <h2>Sign in</h2>
+            <div class="inputbox">
+                <input type="text" required>
+                <span>Username</span>
+                <i></i>
+            </div>
+            <div class="inputbox">
+                <input type="password" required>
+                <span>Password</span>
+                <i></i>
+            </div>
+            <div class="links">
+                <a href="#">Forgot Password</a>
+                <a href="#">Sign Up</a>
+            </div>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+    <script>
+        const Root = document.querySelector(".container2");
+        const Root1 = document.querySelector(".container");
+        const bg = document.querySelector(".bg");
+
+        Root.addEventListener("mousemove", function(e){
+            bg.style.left = `${e.clientX}px`;
+            bg.style.top = `${e.clientY}px`;
+        })
+        Root1.addEventListener("mousemove", function(e){
+            bg.style.left = `${e.clientX}px`;
+            bg.style.top = `${e.clientY}px`;
+        })
+    </script>
+</body>
+</html>
